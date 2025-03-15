@@ -4,6 +4,7 @@ import random
 '''
 turtle 사용자 정의부임!
 '''
+isMoving = False
 
 def turtleBlowup(min=1, max=3, delay=100):
     global pSize

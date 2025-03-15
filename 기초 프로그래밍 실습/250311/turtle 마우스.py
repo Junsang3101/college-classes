@@ -8,7 +8,6 @@ turtleRC = turtleCM.turtleRC
 turtleLC = turtleCM.turtleLC
 turtleMC = turtleCM.turtleMC
 
-isMoving = False
 pSize = 10
 speed = 5
 
