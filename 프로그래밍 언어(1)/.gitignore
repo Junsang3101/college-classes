@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# linux execate file don't have extension so i puted _executable
+*_executable
