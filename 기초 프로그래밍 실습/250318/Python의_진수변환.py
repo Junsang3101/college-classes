@@ -1,0 +1,5 @@
+print("Python에서는 진수끼리 변환할 수 있다")
+print('2진수(binary number)로 바꾸는 건 bin(var)')
+print('8진수(octal number)로 바꾸는 건 oct(var)')
+print('10진수(integer number)로 바꾸는 건 int(var)')
+print('16진수(hexadecimal number)로 바꾸는 건 hex(var)')
