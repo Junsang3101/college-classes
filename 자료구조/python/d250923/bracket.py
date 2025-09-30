@@ -1,6 +1,6 @@
-from ArrayStack import ArrayStack
+from .ArrayStack import ArrayStack
 
-def checkBracket(statement):
+def checkBrackets(statement):
     stack = ArrayStack(100)
     for ch in statement:
         if ch == '(' or ch == '{' or ch == '[':
