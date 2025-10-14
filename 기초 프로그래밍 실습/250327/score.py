@@ -1,6 +1,8 @@
 score = int(input("점수를 입력하세요 : "))
 
-if score >= 100:
+if score > 100:
+    print("X")
+elif score >= 100:
     print("A")
 elif score >= 90:
     print("B")
