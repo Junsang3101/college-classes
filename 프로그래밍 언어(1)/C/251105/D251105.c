@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+static int is_seeded = 0;
 
 void minmaxarr(int **min, int **max, int *arr) {
     *min = arr;
@@ -26,6 +30,17 @@ void initarr(int *arr, int size, int value) {
     }
 }
 
+void randarr(int *arr, int size, int mod) {
+    ++mod;
+    if (is_seeded == 0) {
+        srand(time(NULL));
+        is_seeded = 1;
+    }
+    for (int i = 0; i < size; i++) {
+        arr[i] = rand() % mod;
+    }
+}
+
 void intswap(int *a, int *b) {
     int temp = *a;
     *a = *b;
@@ -43,4 +58,22 @@ void bubblesort(int *arr, int size) {
             }
         }
     }
+}
+
+int binarysearch(int *arr, int size, int target) {
+    int cursor = size/2;
+
+    while (1) {
+        if (arr[cursor] == target) {
+            return cursor;
+        }
+        else if (arr[cursor] > target && cursor >= 0) {
+            cursor /= 2;
+        }
+        else if (arr[cursor] < target && cursor < size) {
+            cursor += cursor/2;
+        }
+    }
+
+    return -1;
 }
