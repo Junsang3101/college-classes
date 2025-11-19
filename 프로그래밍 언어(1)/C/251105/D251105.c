@@ -77,3 +77,14 @@ int binarysearch(int *arr, int size, int target) {
 
     return -1;
 }
+
+void hanoi(int hight, char f, char a, char t) {
+    if (hight==1) {
+        printf("%d %c -> %c\n",hight, f, t);
+    }
+    else {
+        hanoi(hight-1, f, t, a);
+        printf("%d %c -> %c\n", hight, f, t);
+        hanoi(hight-1, a, f, t);
+    }
+}

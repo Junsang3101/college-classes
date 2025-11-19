@@ -8,6 +8,7 @@ void randarr(int *arr, int size, int mod);
 void bubblesort(int *arr, int size);
 void intswap(int *a, int *b);
 int binarysearch(int *arr, int size, int target);
+void hanoi(int hight, char f, char a, char t);
 
 
 #endif
