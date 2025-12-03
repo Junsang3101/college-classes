@@ -20,6 +20,5 @@ int main() {
         printf("%s\n", word[i]);
     }
 
-
     return EXIT_SUCCESS;
 }
